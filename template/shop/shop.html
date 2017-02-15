@@ -1,0 +1,27 @@
+<ion-view id="shop" hide-back-button="true">
+    <ion-nav-buttons side="left">
+        <button class="button button-icon icon ion-ios-cart-outline" ui-sref="tabs.ording"></button>
+        <div class="cartnum">{{totalNumber}}</div>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <input type="search" placeholder="请输入关键词" class="text-right" ng-show="float">
+        <button class="button button-icon icon ion-ios-search" ng-click="float=!float"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="shop-page1 light-bg">
+            <div class="row" ng-repeat="arr in shopCates">
+                <div class="col text-center" ng-repeat="cate in arr" ng-click="cateChose(cate)">
+                    <img ng-src="{{cate.imgsrc}}" alt="">
+                    <p>{{cate.name}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="list shop-page2 light-bg">
+            <div class="item" ng-repeat="pro in shopPros | showByType:showType"
+                 style="background-image: url('{{pro.imgsrc}}')" ng-click="shopChose(pro)">
+                <h2>{{pro.name}}</h2>
+                <span>￥ {{pro.price}}</span>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

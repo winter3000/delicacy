@@ -1,0 +1,39 @@
+<ion-view id="mypage" hide-back-button="true">
+    <ion-nav-buttons side="left">
+        <button class="button button-icon icon ion-ios-plus-outline"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-ios-gear-outline"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="my-page1 title text-center">
+            <img src="images/head.jpg">
+            <p>{{user.name}}</p>
+        </div>
+        <div class="my-page2 row text-center" ng-click="mypageActive(items)">
+            <div class="col tabs-icon-top"
+                 ng-click="setSelected(0)" ng-class="{'myactive':isSelected(0)}">
+                <i class="icon ion-clipboard"></i>
+                <p>22</p>
+            </div>
+            <div class="col tabs-icon-top"
+                 ng-click="setSelected(1)" ng-class="{'myactive':isSelected(1)}">
+                <i class="icon ion-ios-heart-outline"></i>
+                <p>58</p>
+            </div>
+            <div class="col tabs-icon-top"
+                 ng-click="setSelected(2)" ng-class="{'myactive':isSelected(2)}">
+                <i class="icon ion-social-buffer-outline"></i>
+                <p>15</p>
+            </div>
+        </div>
+        <div class="my-page3 list">
+            <a class="item item-thumbnail-left" href="javascript:;"
+            ng-repeat="menu in mymenus | showByType:showType">
+                <img ng-src="{{menu.imgsrc}}" ng-click="toDetail(menu)">
+                <h2>{{menu.name}}</h2>
+                <p>￥ {{menu.price}}</p>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

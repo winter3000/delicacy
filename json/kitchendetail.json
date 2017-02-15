@@ -1,0 +1,18 @@
+[
+    {"name":"红烧鳝鱼","producer":"鳝鱼帅傅1","like":384,"comment":22,"price":75,
+        "imgsrc":"images/block1.jpg","floge":false,"type":1,"introduce":"私房菜星级厨师"},
+    {"name":"年年有鱼","producer":"有鱼帅傅2","like":344,"comment":22,"price":275,
+        "imgsrc":"images/block2.jpg","floge":false,"type":1,"introduce":"私房菜星级厨师"},
+    {"name":"牛肉沙拉","producer":"沙拉帅傅3","like":384,"comment":72,"price":375,
+        "imgsrc":"images/block3.jpg","floge":false,"type":2,"introduce":"私房菜星级厨师"},
+    {"name":"清炒虾仁","producer":"虾仁帅傅4","like":563,"comment":23,"price":53,
+        "imgsrc":"images/block4.jpg","floge":false,"type":2,"introduce":"私房菜星级厨师"},
+    {"name":"鳗鱼饭","producer":"鱼饭帅傅5","like":384,"comment":28,"price":43,
+        "imgsrc":"images/block5.jpg","floge":false,"type":3,"introduce":"私房菜星级厨师"},
+    {"name":"牛肉汤","producer":"肉汤帅傅6","like":14,"comment":22,"price":486,
+        "imgsrc":"images/block6.jpg","floge":false,"type":3,"introduce":"私房菜星级厨师"},
+    {"name":"清蒸大闸蟹","producer":"大闸蟹帅傅7","like":374,"comment":72,"price":21,
+        "imgsrc":"images/block7.jpg","floge":false,"type":4,"introduce":"私房菜星级厨师"},
+    {"name":"菜品8","producer":"菜品帅傅8","like":64,"comment":20,"price":78,
+        "imgsrc":"images/block8.jpg","floge":false,"type":4,"introduce":"私房菜星级厨师"}
+]

@@ -1,0 +1,336 @@
+body,h1,h2,h3,h4{
+    font-family:"Microsoft YaHei UI";
+}
+.orange{
+     color: #ff9e33 !important;
+ }
+.orange-bg{
+    background-color:#ff9e33 !important;
+    color: #ffffff;
+}
+/*--------------------------tour-------------------------------------------*/
+#tour img{
+    width: 100%;
+    overflow: hidden;
+}
+#tour button{
+    position: absolute;
+    bottom: 17%;
+    left: 50%;
+    width: 70%;
+    margin-left: -35%;
+
+}
+/*--------------------------register-------------------------------------------*/
+.register-content .register-icon{
+    height: 120px;
+}
+.register-content{
+    color: #ff9e33;
+}
+.register-content .btn-load{
+    width: 80%;
+    background-color: #ff9e33;
+    color: #ffffff;
+}
+.register-content .col img{
+    width: 60%;}
+
+#tabs .tab-item-active .tab-title{
+    color: #ff9e33
+}
+/*--------------------------home-------------------------------------------*/
+#home{
+    background-color: #ffce88;
+}
+#home .home-page1 .box img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+#home .slider-pager-page{
+    color: #ffffff;
+    opacity: 0.5;
+}
+#home .slider-pager-page.active{
+    opacity: 1;
+}
+#home .ion-chevron-right{
+    font-size: 18px;
+}
+#home .home-page2 ion-scroll{
+    width: 100%;
+    height: 130px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+#home .home-page2 ul{
+    width: 720px;
+    height: 130px;
+}
+#home .home-page2 li{
+    width: 100px;
+    margin: 5px 10px;
+    text-align: center;
+    float: left;
+}
+#home .home-page2 li img{
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+#home .home-page2 .scroll-view .scroll-bar{
+    display: none;
+}
+#home .home-page3 .hotpro{
+    padding:0 10px 10px;
+    border: none;
+}
+#home .home-page3 .hotpro img{
+    margin-bottom: 5px;
+}
+#home .home-page3 .hotpro h2,.kitchen-list h2{
+     padding-left: 7px;
+ }
+#home .home-page3 .hotpro p,.kitchen-list p{
+    padding-left: 7px;
+    margin-bottom:0;
+}
+#home .hotpro .row p,.kitchen-list .row p{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+#home .home-page3 img,.kitchen-list img{
+    width: 100%;
+    overflow: hidden;
+}
+/*--------------------------kitchen-------------------------------------------*/
+.kitchen-title .tab-item-active{
+    border-bottom: 2px solid #ff9e33;
+}
+.kitchen-title .tab-item-active span{
+    color: #ff9e33;
+}
+.forKitTitClick{
+    width: 100%;}
+#kitchen ion-scroll{
+    width: 100%;
+    height: 44px;
+    padding: 10px 10px;
+}
+#kitchen .kitchen-cate{
+    height: 44px;
+    width: 450px;
+}
+#kitchen .kitchen-cate li{
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    width: 70px;
+    background-color: #8f8f8f;
+    color: #ffffff;
+    margin: 0 5px;
+    border-radius: 12px;
+}
+#kitchen .scroll-view .scroll-bar{
+    display: none;
+}
+#kitchen .kitchen-cate .aAction{
+    background-color: #ff9e33;
+}
+/*--------------------------shop-------------------------------------------*/
+#shop{
+    background-color: #ffce88;
+}
+.shop-page1{
+    margin: 5px 0;
+}
+#shop .row{
+    padding: 0;
+}
+#shop .col{
+    border-top: 1px solid #ffce88;
+    border-right: 1px solid #ffce88;
+}
+#shop .col:nth-of-type(4){
+    border-right: none;
+}
+.shop-page2 .item{
+    width: 100%;
+    height: 132px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #ffffff;
+    font-family:"Microsoft YaHei UI Light";
+}
+.shop-page2 .item:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.shop-page2 .item h2{
+    color: #ffffff;
+    font-size: 22px;
+    height: 92px;
+    line-height: 92px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.shop-page2 .item span{
+    position: absolute;
+    z-index:1;
+    right: 10px;
+    bottom: 5px;
+}
+.buttons-left{
+    position: relative;
+}
+ .cartnum{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+     padding:2px 5px 15px 5px;
+    height: 15px;
+     line-height: 15px;
+     text-align: center;
+    border-radius: 50%;
+    background-color: red;
+    color: #ffffff;
+     z-index: 2;
+}
+/*--------------------------ording-------------------------------------------*/
+#ording .card{
+    margin-top: 25%;
+    height: 50%;
+}
+#ording .button-full{
+    width: 70%;
+}
+#ording .price{
+    font-size: 0.8rem;
+}
+#ording p{
+    font-size:1rem;
+}
+#ording .item-avatar{
+    padding-bottom: 5px;
+}
+/*#ording .text-right strong{
+    font-size: 1rem;
+}*/
+/*--------------------------mypage-------------------------------------------*/
+.my-page1 img{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.my-page1 p{
+    margin: 0;
+    padding: 0;
+    height: 44px;
+    line-height: 44px;
+    font-weight: bold;
+}
+.my-page2 i{
+    font-size: 2em;
+}
+.my-page2 p{
+    font-size: 1.5em;
+}
+.my-page2 .myactive{
+    background-color: #ff9e33;
+    color: #ffffff;
+}
+.my-page3 h2{
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+/*--------------------------kitchenDetail-------------------------------------------*/
+.kitcD-page1 .topimg{
+    /*height: 260px;*/
+    overflow: hidden;
+    position: relative;
+}
+.kitcD-page1 .topimg img{
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+}
+.kitcD-page1 .topimg:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+}
+.kitcD-page1 .ion-ios-analytics-outline{
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    right: 4px;
+}
+.kitcD-page1 .ion-ios-heart-outline{
+    position: absolute;
+    top: 5px;
+    right: 37px;
+    z-index: 2;
+}
+.kitcD-page1 .back-button{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: 2;
+}
+.kitcD-page2 .likebox span{
+    display: inline-block;
+    width: 22%;
+    font-size: 18px;
+}
+.kitcD-page2 h3{
+    height: 22px;
+    line-height: 22px;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.kitcD-page2 p{
+    font-size: 14px;
+    color: #666666;
+}
+.kitcD-page2 .orange{
+    border-color: #ff9e33;
+    font-size: 15px;
+    top: 24px;
+}
+.kitcD-page2 .black{
+    border-color: #666666;
+    color: #666666;
+    font-size: 15px;
+    top: 24px;
+}
+.kitcD-pagetxt p{
+    font-size: 18px;
+    min-height: 30px;
+    line-height: 30px;
+}
+.kitcD-pagetxt .item-text-wrap{
+    margin-bottom: 10px;
+}

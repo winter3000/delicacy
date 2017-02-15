@@ -1,0 +1,9 @@
+[
+    {"name":"1制作材料1","price":56,"imgsrc":"images/item1.jpg","type":1},
+    {"name":"1制作材料2","price":156,"imgsrc":"images/item2.jpg","type":1},
+    {"name":"1制作材料3","price":256,"imgsrc":"images/item3.jpg","type":1},
+    {"name":"2制作材料4","price":356,"imgsrc":"images/item4.jpg","type":2},
+    {"name":"2制作材料5","price":456,"imgsrc":"images/item5.jpg","type":2},
+    {"name":"3制作材料6","price":556,"imgsrc":"images/item6.jpg","type":3},
+    {"name":"4制作材料7","price":56,"imgsrc":"images/item7.jpg","type":4}
+]

@@ -1,0 +1,35 @@
+<ion-view id="kitchen">
+    <!------------标题---------->
+    <ion-nav-title class="kitchen-title">
+       <ion-tabs class="tabs-light has-tabs-top"><!--========-->
+           <ion-tab title="菜单" ng-click="listName('allL')"></ion-tab>
+           <ion-tab title="喜欢" ng-click="listName('likeL')"></ion-tab>
+       </ion-tabs>
+    </ion-nav-title>
+    <ion-content>
+        <!---------类别--------->
+        <ion-scroll direction="x">
+            <ul class="kitchen-cate">
+                <li ng-repeat="cate in kitchenCates"
+                    ng-click="choseCate(cate)"
+                    ng-class="cate.floge?'aAction':''">{{cate.name}}</li>
+            </ul>
+        </ion-scroll>
+        <!--菜单-->
+        <div class="row kitchen-list" style="flex-wrap: wrap;">
+            <ion-item class="col-50 hotpro" ng-repeat="hotpro in hotpros | showByType:showType">
+                <img ng-src="{{hotpro.imgsrc}}"  ng-click="toDetail(hotpro)">
+                <h2>{{hotpro.name}}</h2>
+                <p>{{hotpro.producer}}</p>
+                <div class="row">
+                    <p class="col" ng-click="homeLickAdd(hotpro)">
+                        <i class={{hotpro.likeClass||likeClass}}></i>{{hotpro.like}}
+                    </p>
+                    <p class="col" ng-click="showPopup(hotpro)">
+                        <i class="icon ion-ios-chatbubble-outline"></i>{{hotpro.comment}}
+                    </p>
+                </div>
+            </ion-item>
+        </div>
+    </ion-content>
+</ion-view>

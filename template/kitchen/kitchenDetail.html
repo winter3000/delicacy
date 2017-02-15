@@ -1,0 +1,37 @@
+<ion-view id="kitchenDetail" hide-nav-bar="true">
+    <ion-content>
+        <div class="kitcD-page1 ">
+            <button class="back-button button-icon icon ion-ios-arrow-left light"
+                    ui-sref="tabs.kitchen"></button>
+            <button class="button button-icon icon ion-ios-heart-outline light"></button>
+            <button class="button button-icon icon ion-ios-analytics-outline light"></button>
+            <div class="topimg"><img ng-src="{{product.imgsrc}}"></div>
+        </div>
+        <div class="kitcD-page2 text-center">
+            <h3>{{product.name}}</h3>
+            <p>{{product.producer}}</p>
+            <div class="likebox">
+                <span><i class="icon ion-ios-heart assertive"></i>{{product.like}}</span>
+                <span><i class="icon ion-ios-chatbubble positive"></i>{{product.comment}}</span>
+            </div>
+            <ion-list class="text-left">
+                <ion-item class="item-avatar item-remove-animate item-button-right item-borderless">
+                    <img src="images/head.jpg" alt="">
+                    <h3>{{product.producer}}</h3>
+                    <p>{{product.introduce}}</p>
+                    <button class="button button-outline orange" ng-click="concern()" ng-if="concernFlog">关注</button>
+                    <button class="button button-outline black" ng-click="concern()" ng-if="!concernFlog">已关注</button>
+                </ion-item>
+            </ion-list>
+        </div>
+        <div class="kitcD-pagetxt list card">
+            <div class="item item-image item-text-wrap item-borderless"
+                 ng-repeat="recipe in recipes">
+                <img ng-src="{{recipe.recipeimg}}">
+                <p class="">{{recipe.recipetxt}}</p>
+            </div>
+
+
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,32 @@
+<ion-view >
+    <ion-nav-buttons side="right">
+        <button class="button button-clear orange">注册</button>
+    </ion-nav-buttons>
+    <ion-content class="text-center register-content">
+       <img src="images/icon-title.png" class="register-icon">
+        <br>
+        <div class="card">
+            <form name="registerForm" novalidate>
+                <label class="item">
+                    <input type="text" placeholder="用户名" name="name"
+                           required ng-model="user.name">
+                </label>
+                <label class="item">
+                    <input type="password" placeholder="密码" name="password"
+                           required ng-model="user.password">
+                </label>
+            </form>
+        </div>
+        <button class="button btn-load"
+                ui-sref="tabs.mypage" ng-disabled="registerForm.$invalid">登　录</button>
+        <br><br>
+        <div>
+            <p class="text-center">第三方登录</p>
+            <div class="row">
+                <a href="#" class="col col-20 col-offset-20"><img src="images/tengxun.png"></a>
+                <a href="#" class="col col-20"><img src="images/weibo.png"></a>
+                <a href="#" class="col col-20"><img src="images/weixin.png"></a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

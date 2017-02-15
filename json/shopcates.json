@@ -1,0 +1,14 @@
+[
+  [
+    {"name":"水果","imgsrc":"images/shop1.jpg","type":1},
+    {"name":"蔬菜","imgsrc":"images/shop2.jpg","type":2},
+    {"name":"海鲜","imgsrc":"images/shop3.jpg","type":3},
+    {"name":"米饭","imgsrc":"images/shop4.jpg","type":4}
+  ],
+  [
+    {"name":"水果2","imgsrc":"images/shop5.jpg","type":1},
+    {"name":"蔬菜2","imgsrc":"images/shop6.jpg","type":2},
+    {"name":"海鲜2","imgsrc":"images/shop3.jpg","type":3},
+    {"name":"更多2","imgsrc":"images/shop0.jpg","type":0}
+  ]
+]

@@ -1,0 +1,38 @@
+<ion-view id="ording" hide-nav-bar="true" title="您的购物车">
+    <ion-content>
+        <!--空购物车-->
+        <div class="card" ng-show="cartDate.length==0">
+            <div class="item item-text-wrap">
+                <h2>您的购物车是空的。<a ui-sref="tabs.shop">继续购物</a></h2>
+            </div>
+        </div>
+        <!--购物列表-->
+        <div ng-show="cartDate.length!=0">
+            <div class="list">
+                <div class="item item-avatar" ng-repeat="item in cartDate">
+                    <img ng-src="{{item.product.imgsrc}}">
+                    <h2>{{item.product.name}}</h2>
+                    <div class="row price">
+                        <div class="col"><strong>数量: </strong>{{item.number}}</div>
+                        <div class="col"><strong>小计:</strong>{{item.product.price * item.number | currency:" ￥"}}</div>
+                    </div>
+                </div>
+                <div class="item text-right">
+                    <p><strong>总计：</strong>{{summary | currency:" ￥"}}</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <button class="button orange-bg" ui-sref="tabs.shop">
+                        继续购物
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="button button-positive" ui-sref="tabs.ordingDetail">
+                        提交订单
+                    </button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

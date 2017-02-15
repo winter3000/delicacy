@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>美食APP</title>
+    <link rel="stylesheet" href="lib/ionic/css/ionic.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="lib/ionic/js/ionic.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/cartService.js"></script>
+    <script src="template/home/home.js"></script>
+    <script src="template/kitchen/kitchen.js"></script>
+    <script src="template/shop/shop.js"></script>
+    <script src="template/mypage/mypage.js"></script>
+    <script src="template/kitchen/kitchenDetail.js"></script>
+    <script src="js/filter.js"></script>
+</head>
+<body ng-controller="myCtrl">
+<!--导航栏-->
+<ion-nav-bar>
+    <!--后退按钮:只需在主页面写一次。子页面会自动显示-->
+    <ion-nav-back-button class="dark"></ion-nav-back-button>
+</ion-nav-bar>
+<!--导航视图-->
+<ion-nav-view></ion-nav-view>
+</body>
+</html>

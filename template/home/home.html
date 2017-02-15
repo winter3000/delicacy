@@ -1,0 +1,52 @@
+<ion-view id="home" hide-nav-bar="true">
+    <ion-content>
+        <ion-slide-box does-continue="true" auto-play="true" slide-interval="2000" class="home-page1">
+            <ion-slide ng-repeat="slideimg in slideimgs">
+                <div class="box"><img ng-src="{{slideimg.imgsrc}}" alt=""></div>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="home-page2 light-bg">
+            <ion-list>
+                <ion-item class="item-avatar item-remove-animate item-icon-right item-borderless">
+                    <img src="images/head.jpg" alt="">
+                    <h2>汪帅傅</h2>
+                    <p>10道</p>
+                    <a class="icon ion-chevron-right dark"></a>
+                </ion-item>
+            </ion-list>
+            <ion-scroll direction="x">
+                <ul>
+                    <li ng-repeat="hotpro in hotpros" ng-click="toDetail(hotpro)">
+                        <a href="javascript:;"><img ng-src="{{hotpro.imgsrc}}" ></a>
+                        <p>{{hotpro.name}}</p>
+                    </li>
+                </ul>
+            </ion-scroll>
+        </div>
+        <div class="home-page3 light-bg">
+            <ion-list>
+                <ion-item class="item-icon-right item-borderless">
+                    <h2>热门推荐</h2>
+                    <a class="icon ion-chevron-right dark"></a>
+                </ion-item>
+            </ion-list>
+            <div class="row" style="flex-wrap: wrap;">
+                <ion-item class="col-50 hotpro" ng-repeat="hotpro in hotpros">
+                    <img ng-src="{{hotpro.imgsrc}}" ng-click="toDetail(hotpro)">
+                    <h2>{{hotpro.name}}</h2>
+                    <p>{{hotpro.producer}}</p>
+                    <div class="row">
+                        <p class="col" ng-click="homeLickAdd(hotpro)">
+                            <i class={{hotpro.likeClass||likeClass}}></i>{{hotpro.like}}
+                        </p>
+                        <p class="col" ng-click="showPopup(hotpro)">
+                            <i class="icon ion-ios-chatbubble-outline"></i>{{hotpro.comment}}
+                        </p>
+                    </div>
+                </ion-item>
+            </div>
+        </div>
+
+
+    </ion-content>
+</ion-view>
