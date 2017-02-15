@@ -9,7 +9,7 @@ myapp.controller("myCtrl",function($scope){
     $scope.user=[];
 });
 //路由配置（$stateProvider：根据状态机导航；$urlRouterProvider：根据url导航）
-myapp.config(function($stateProvider,$urlRouterProvider){
+myapp.config(function ($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
     $stateProvider
         .state("tour",{
             url:"/tour",
@@ -76,6 +76,21 @@ myapp.config(function($stateProvider,$urlRouterProvider){
         });
     // 默认路由
     $urlRouterProvider.otherwise("/tour");
+
+    //解决苹果和安卓系统选项卡显示问题
+    $ionicConfigProvider.platform.ios.tabs.style('standard');
+    $ionicConfigProvider.platform.ios.tabs.position('bottom');
+    $ionicConfigProvider.platform.android.tabs.style('standard');
+    $ionicConfigProvider.platform.android.tabs.position('bottom');
+
+    $ionicConfigProvider.platform.ios.navBar.alignTitle('center');
+    $ionicConfigProvider.platform.android.navBar.alignTitle('center');
+
+    $ionicConfigProvider.platform.ios.backButton.previousTitleText('').icon('ion-ios-arrow-thin-left');
+    $ionicConfigProvider.platform.android.backButton.previousTitleText('').icon('ion-android-arrow-back');
+
+    $ionicConfigProvider.platform.ios.views.transition('ios');
+    $ionicConfigProvider.platform.android.views.transition('android');
 });
 
 // 使用工厂方法，创建的一个单例对象
